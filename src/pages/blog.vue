@@ -9,8 +9,8 @@
     
 </template>
 <script>
-    import { mapState } from 'vuex'
-    export default {
-        computed: mapState({user: state => state.user}),
-    }
+  import { mapState } from 'vuex'
+  export default {
+    computed: mapState({user: state => state.user}),
+  }
 </script>

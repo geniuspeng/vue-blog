@@ -2,6 +2,9 @@
   <div id="app">
     <img src="../assets/logo.png">
     <hello></hello>
+    <router-link to="/login">Go to Login</router-link>
+    <router-link to="/signout">Go to Signout</router-link>
+    <div :id="test"></div>
   </div>
 </template>
 
@@ -10,6 +13,11 @@ import Hello from '../components/Hello';
 
 export default {
   name: 'app',
+  data() {
+    return {
+      test: 'ddddddd'
+    }
+  },
   components: {
     Hello,
   },
