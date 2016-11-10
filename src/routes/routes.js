@@ -3,9 +3,9 @@ import Index from '../pages/index';
 import Login from '../pages/login';
 import Signout from '../pages/signout';
 import Blog from '../pages/blog';
-import Tags from '../pages/tags';
-import Categories from '../pages/categories';
+import Content from '../pages/content';
 import About from '../pages/about';
+import Sidebar from '../components/Sidebar';
 
 export default [
   {
@@ -27,15 +27,34 @@ export default [
       },
       {
         path: '/blog',
-        component: Blog,
+        components: {
+          sidebar: Sidebar,
+          content: Blog
+        },
       },
       {
         path: '/tags',
-        component: Tags,
+        meta: {name: 'tags'},
+        components: {
+          sidebar: Sidebar,
+          content: Content
+        },
+      },
+      {
+        path: '/archives',
+        meta: {name: 'archives'},
+        components: {
+          sidebar: Sidebar,
+          content: Content
+        },
       },
       {
         path: '/categories',
-        component: Categories,
+        meta: {name: 'categories'},
+        components: {
+          sidebar: Sidebar,
+          content: Content
+        },
       },
       {
         path: '/about',

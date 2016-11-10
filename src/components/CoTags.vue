@@ -1,16 +1,16 @@
 <template>
-  <header class="header">
-    <div class="item left">
-      <slot name="left"></slot>
-    </div>
-    <div class="title">{{title}}</div>
-    <div class="item right">
-      <slot name="right"></slot>
-    </div>
-  </header>
+  <div>
+    <router-link to="/tags">标签</router-link>
+  </div>
 </template>
 <script>
   export default {
+    data() {
+      return {
+        r: this.$route,
+        rr: this.$router
+      }
+    },
     props: {
       title: {
         type: String,

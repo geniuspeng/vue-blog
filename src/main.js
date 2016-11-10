@@ -2,7 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes/routes';
 import store from './store/';
-import Header from './components/header'
+import Header from './components/Header'
+import 'global.styl';
 
 
 Vue.use(VueRouter);

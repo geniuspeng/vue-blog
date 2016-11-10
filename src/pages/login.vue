@@ -1,19 +1,21 @@
 <style lang="stylus" scoped>
-  .login 
-    padding 50px
-    text-align center
-    .line 
-      padding 5px
-      input 
-        padding 0 10px
+  .login-wrap
+    width 100%
+    .login 
+      padding 50px
+      text-align center
+      .line 
+        padding 5px
+        input 
+          padding 0 10px
+          line-height 28px
+      button 
+        padding 0 20px
+        margin-top 20px
         line-height 28px
-    button 
-      padding 0 20px
-      margin-top 20px
-      line-height 28px
 </style>
 <template>
-  <div>
+  <div class="login-wrap">
     <common-header title="登录">
       <router-link slot="left" to="/">返回</router-link>
     </common-header>
