@@ -21,7 +21,6 @@ export default {
     flex-flow: row wrap;
     justify-content: center;
     aside
-      background red
       width 15%
       height 100%
     section

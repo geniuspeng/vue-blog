@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="archives-item">
     <router-link to="/archives">归档</router-link>
   </div>
 </template>
@@ -15,24 +15,9 @@
 </script>
 
 <style lang="stylus" scoped>
-  .header 
-    position relative
-    line-height 38px
-    color #fff
-    text-align center
-    background #222
-    .item 
-      position absolute
-      top 0
-      bottom 0
-      z-index 1
-      a 
-        color #fff
-    .left 
-      left 10px
-    
-    .right 
-      right 10px
-    
+  .archives-item
+    background #cacaca
+    a:hover
+      color red
   
 </style>

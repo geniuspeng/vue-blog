@@ -1,14 +1,16 @@
 <style lang="stylus" scoped>
-  .btn 
-    padding 50px
-    text-align center
-    button 
-      padding 5px 10px
+  .signout-wrap
+    width 100%
+    .btn 
+      padding 50px
+      text-align center
+      button 
+        padding 5px 10px
     
   
 </style>
 <template>
-  <div>
+  <div class="signout-wrap">
     <common-header title="退出">
       <router-link slot="left" to="/home">返回</router-link>
     </common-header>

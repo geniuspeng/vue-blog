@@ -1,5 +1,12 @@
 <template>
-  <section>{{content}}</section>
+  <section>
+    <common-header :title="content">
+      <router-link slot="left" to="/">返回</router-link>
+      <router-link slot="right" to="/signout">退出</router-link>
+    </common-header>
+    <div>{{content}}</div>
+  </section>
+  
 </template>
 <script>
   export default {

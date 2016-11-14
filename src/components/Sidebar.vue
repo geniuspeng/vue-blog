@@ -25,8 +25,6 @@
 </script>
 
 <style lang="stylus" scoped>
-  aside
-    width 150px
-    height 100%
-  
+  .aside
+    background green
 </style>

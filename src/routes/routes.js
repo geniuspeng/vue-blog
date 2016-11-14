@@ -27,6 +27,7 @@ export default [
       },
       {
         path: '/blog',
+        name: 'blog',
         components: {
           sidebar: Sidebar,
           content: Blog

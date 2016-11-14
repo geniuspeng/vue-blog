@@ -44,6 +44,16 @@
         },
       };
     },
+    beforeRouteEnter (to, from, next) {
+      // console.log(this);
+      next(vm => {
+        console.log(vm.$store.state.user.id);
+        if (vm.$store.state.user.id) {
+          console.log('yes');
+          return next('/blog')
+        }
+      });
+    },
     methods: {
       ...mapActions(['SIGNIN']),
       submit() {
